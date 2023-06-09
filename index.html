@@ -24,7 +24,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-  <title>Academic Project Page</title>
+  <title>XSkill: Cross Embodiment Skill Discovery</title>
   <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
   rel="stylesheet">
@@ -46,8 +46,353 @@
 </head>
 <body>
 
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">XSkill: Cross Embodiment Skill Discovery</h1>
+            <div class="is-size-5 publication-authors">
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
 
+  <body>
+    <!-- Paper abstract -->
+    <section class="section hero is-light">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered has-text-centered">
+          <div class="column is-four-fifths">
+            <h2 class="title is-3">Abstract</h2>
+            <div class="content has-text-justified">
+              <p>
+                Human demonstration videos are a widely available data source
+                for robot learning and an intuitive user interface for
+                expressing desired behavior. However, directly extracting
+                reusable robot manipulation skills from unstructured human
+                videos is challenging due to the big embodiment difference and
+                unobserved action parameters. To bridge this embodiment gap,
+                this paper introduces XSkill, an imitation learning framework
+                that 1) discovers a cross-embodiment representation called skill
+                prototypes purely from unlabeled human and robot manipulation
+                videos, 2) transfers the skill representation to robot actions
+                using conditional diffusion policy, and finally, 3) composes the
+                learned skill to accomplish unseen tasks specified by a human
+                prompt video. Our experiments in simulation and real-world
+                environments show that the discovered skill prototypes
+                facilitate both skill transfer and composition for unseen tasks,
+                resulting in a more general and scalable imitation learning
+                framework
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End paper abstract -->
 
+    <p class="shared-description">
+      XSkill can complete different sub-tasks in order based on a single human
+      prompt video.
+    </p>
+
+    <div class="video-container">
+      <div class="video-wrapper">
+        <video
+          poster=""
+          autoplay
+          controls
+          muted
+          loop
+          style="width: 100%; height: auto"
+        >
+          <!-- Your first video here -->
+          <source
+            src="static/videos/draw_light_cloth_oven/human/demo.mp4"
+            type="video/mp4"
+          />
+        </video>
+        <p class="video-description">Human Prompt: Draw-Light-Cloth-Oven</p>
+      </div>
+      <div class="video-wrapper">
+        <video
+          poster=""
+          autoplay
+          controls
+          muted
+          loop
+          style="width: 100%; height: auto"
+        >
+          <!-- Your second video here -->
+          <source
+            src="static/videos/draw_light_cloth_oven/robot/execution.mp4"
+            type="video/mp4"
+          />
+        </video>
+        <p class="video-description">Robot Execution: Draw-Light-Cloth-Oven</p>
+      </div>
+    </div>
+
+    <div class="video-container">
+      <div class="video-wrapper">
+        <video
+          poster=""
+          autoplay
+          controls
+          muted
+          loop
+          style="width: 100%; height: auto"
+        >
+          <!-- Your first video here -->
+          <source
+            src="static/videos/draw_cloth_light_oven/human/demo.mp4"
+            type="video/mp4"
+          />
+        </video>
+        <p class="video-description">Human Prompt: Draw-Cloth-Light-Oven</p>
+      </div>
+      <div class="video-wrapper">
+        <video
+          poster=""
+          autoplay
+          controls
+          muted
+          loop
+          style="width: 100%; height: auto"
+        >
+          <!-- Your second video here -->
+          <source
+            src="static/videos/draw_cloth_light_oven/robot/execution.mp4"
+            type="video/mp4"
+          />
+        </video>
+        <p class="video-description">Robot Execution: Draw-Cloth-Light-Oven</p>
+      </div>
+    </div>
+
+    <div class="video-container">
+      <div class="video-wrapper">
+        <video
+          poster=""
+          autoplay
+          controls
+          muted
+          loop
+          style="width: 100%; height: auto"
+        >
+          <!-- Your first video here -->
+          <source
+            src="static/videos/oven_light_cloth_draw/human/demo.mp4"
+            type="video/mp4"
+          />
+        </video>
+        <p class="video-description">Human Prompt: Oven-Light-Cloth-Draw</p>
+      </div>
+      <div class="video-wrapper">
+        <video
+          poster=""
+          autoplay
+          controls
+          muted
+          loop
+          style="width: 100%; height: auto"
+        >
+          <!-- Your second video here -->
+          <source
+            src="static/videos/oven_light_cloth_draw/robot/execution.mp4"
+            type="video/mp4"
+          />
+        </video>
+        <p class="video-description">Robot Execution: Oven-Light-Cloth-Draw</p>
+      </div>
+    </div>
+
+    <div class="video-container">
+      <div class="video-wrapper">
+        <video
+          poster=""
+          autoplay
+          controls
+          muted
+          loop
+          style="width: 100%; height: auto"
+        >
+          <!-- Your first video here -->
+          <source
+            src="static/videos/draw_cloth_light/human/demo.mp4"
+            type="video/mp4"
+          />
+        </video>
+        <p class="video-description">Human Prompt: Draw-Cloth-Light</p>
+      </div>
+      <div class="video-wrapper">
+        <video
+          poster=""
+          autoplay
+          controls
+          muted
+          loop
+          style="width: 100%; height: auto"
+        >
+          <!-- Your second video here -->
+          <source
+            src="static/videos/draw_cloth_light/robot/execution.mp4"
+            type="video/mp4"
+          />
+        </video>
+        <p class="video-description">Robot Execution: Draw-Cloth-Light</p>
+      </div>
+    </div>
+
+    <div class="video-container">
+      <div class="video-wrapper">
+        <video
+          poster=""
+          autoplay
+          controls
+          muted
+          loop
+          style="width: 100%; height: auto"
+        >
+          <!-- Your first video here -->
+          <source
+            src="static/videos/light_cloth_oven/human/demo.mp4"
+            type="video/mp4"
+          />
+        </video>
+        <p class="video-description">Human Prompt: Light-Cloth-Oven</p>
+      </div>
+      <div class="video-wrapper">
+        <video
+          poster=""
+          autoplay
+          controls
+          muted
+          loop
+          style="width: 100%; height: auto"
+        >
+          <!-- Your second video here -->
+          <source
+            src="static/videos/light_cloth_oven/robot/execution.mp4"
+            type="video/mp4"
+          />
+        </video>
+        <p class="video-description">Robot Execution: Light-Cloth-Oven</p>
+      </div>
+    </div>
+
+    <div class="video-container">
+      <div class="video-wrapper">
+        <video
+          poster=""
+          autoplay
+          controls
+          muted
+          loop
+          style="width: 100%; height: auto"
+        >
+          <!-- Your first video here -->
+          <source
+            src="static/videos/draw_cloth_oven/human/demo.mp4"
+            type="video/mp4"
+          />
+        </video>
+        <p class="video-description">Human Prompt: Draw-Cloth-Oven</p>
+      </div>
+      <div class="video-wrapper">
+        <video
+          poster=""
+          autoplay
+          controls
+          muted
+          loop
+          style="width: 100%; height: auto"
+        >
+          <!-- Your second video here -->
+          <source
+            src="static/videos/draw_cloth_oven/robot/execution.mp4"
+            type="video/mp4"
+          />
+        </video>
+        <p class="video-description">Robot Execution: Draw-Cloth-Oven</p>
+      </div>
+    </div>
+
+    <div class="video-container">
+      <div class="video-wrapper">
+        <video
+          poster=""
+          autoplay
+          controls
+          muted
+          loop
+          style="width: 100%; height: auto"
+        >
+          <!-- Your first video here -->
+          <source
+            src="static/videos/draw_light_cloth/human/demo.mp4"
+            type="video/mp4"
+          />
+        </video>
+        <p class="video-description">Human Prompt: Draw-Light-Cloth</p>
+      </div>
+      <div class="video-wrapper">
+        <video
+          poster=""
+          autoplay
+          controls
+          muted
+          loop
+          style="width: 100%; height: auto"
+        >
+          <!-- Your second video here -->
+          <source
+            src="static/videos/draw_light_cloth/robot/execution.mp4"
+            type="video/mp4"
+          />
+        </video>
+        <p class="video-description">Robot Execution: Draw-Light-Cloth</p>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="columns is-centered">
+          <div class="column is-8">
+            <div class="content">
+              <p>
+                This page was built using the
+                <a
+                  href="https://github.com/eliahuhorwitz/Academic-project-page-template"
+                  target="_blank"
+                  >Academic Project Page Template</a
+                >. You are free to borrow the of this website, we just ask that
+                you link back to this page in the footer. <br />
+                This website is licensed under a
+                <a
+                  rel="license"
+                  href="http://creativecommons.org/licenses/by-sa/4.0/"
+                  target="_blank"
+                  >Creative Commons Attribution-ShareAlike 4.0 International
+                  License</a
+                >.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Statcounter tracking code -->
+
+    <!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+
+    <!-- End of Statcounter Code -->
   </body>
-  </html>
+</html>

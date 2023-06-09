@@ -135,3 +135,35 @@ body {
 
 
 
+.video-container {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  height: auto;
+  margin: auto;
+}
+
+.video-wrapper {
+  width: 45%;
+}
+
+video {
+  width: 100%;
+  height: auto;
+}
+
+.shared-description {
+    text-align: center;
+    margin-bottom: 20px; 
+    font-size: 1.5em; /* Adjust as needed */
+    font-weight: bold; /* Makes the text bold */
+}
+
+.shared-description {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 1.5em;
+  /* Adjust as needed */
+  font-weight: bold;
+  /* Makes the text bold */
+}

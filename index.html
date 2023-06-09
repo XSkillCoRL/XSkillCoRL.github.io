@@ -178,8 +178,9 @@ enables adaptive adjustment of skills based on the current state of the robot an
           />
         </video>
       <iframe  src="static/html_plot/draw_light_cloth_oven.html" style="border:none;width:200%;height:220px"></iframe>
-      <p><b>Skill Alignment and Skill execution:</b> The plot visualizes the projection values of raw skill representation predicted by the Skill Alignment Transformer (SAT). 
-        The skill-conditioned imitation learning policy will condition on the predicted skill and the current state to execute robot actions.  
+      <p><b>Skill Alignment and Skill execution:</b> The plot visualizes the projection values of skill representation predicted by the Skill Alignment Transformer (SAT). 
+        The skill-conditioned imitation learning policy will condition on the predicted skill representation and the current state to execute robot actions. In this visualization,
+        the robot reattempt to grasp the cloth several times during the exection to complete this sub-task. Notice, the SAT predicts the skill of "grasp the cloth" (Pink/proto 29) during the reattempt period.
         </p>  
     </div>
     </div>
